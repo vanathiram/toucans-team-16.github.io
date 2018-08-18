@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ABC Occasional Care</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target="#main-nav" data-offset="10">
+    <button class="btn btn-primary arrow up" onclick="topFunction()" id="scrollBtn" title="Top"> <i class="fas fa-arrow-circle-up fa-2x"></i>
+    </button>
+
+    <!--navigation bar-->
+    <nav id="main-nav"class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+       <div class="navbar-header">
+      <a class="navbar-brand" href="#">ABC Occasional Care</a>
+    </div>
+
+    <ul class=" nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./enrollment-Page.html">Enrollments</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./member-login.html"><span class="fa fa-user"></span> MemberLogin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./admin-login.html" data-target="#modalLoginForm"data-toggle="modal"><span class="fa fa-sign-in-alt"></span> AdminLogin</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+
+<!--main section-->
+<div class="section container homepage" id="home">
+<img src="./resources/images/images1.jpg" align=center>
+</div>
+<!--about us section-->
+<div class="aboutus section container" id="about">
+  <h1 class="text-center about-title">ABOUT ABC OCCASIONAL CARE</h1>
+  <img src="./resources/images/images1.jpg" align=left>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+      non proident, sunt in culpa qui officia deserunt mollit anim id est
+      laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+          non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.</p>
+</div>
+<!--Contact Section-->
+<div class="contactus section container" id="contact">
+  <h1 class="text-center about-title">CONTACT US</h1>
+  <div class="row">
+    <div class="contact1 col-lg-offset-1 col-lg-5">
+      <p>Do not hestiate to contact us</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>xxxxxxx, xxx</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+    </div>
+    <div class="contact2  col-lg-6">
+  <form action="/my-handling-form-page" method="post">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name">
+  </div>
+  <div>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_mail">
+  </div>
+  <div>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+  <div class="button">
+  <button type="submit">Send your message</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+
+<!--footer-->
+<footer class="text-center section">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="fa fa-chevron-up"></span>
+  </a><br><br>
+  <p>Created by Toucans-Team-16</P>
+  </footer>
+  <!--footer ends-->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="./resources/js/main.js"></script>
+  </body>
+
+</html>

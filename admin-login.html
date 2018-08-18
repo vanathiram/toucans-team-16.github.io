@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ABC Occasional Care</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+
+    <style>
+    input[type='submit'], button, [aria-label]{
+      cursor: pointer;
+    }
+    #spoiler{
+      display: none;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="admin-page">
+
+    <button type="button" value="Home" onclick="window.location.href='./index.html'"> Home</button>
+    <button onclick="showDashboard()" selected>Dashboard</button>
+    <button onclick="showMembers()">Members</button>
+  </div>
+<!--memberlist-->
+<div id="member-list" class="member-panel">
+<form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+  <input type="text" id="add-name" placeholder="New member">
+  <input type="submit" value="Add">
+</form>
+
+<div  id="spoiler" role="aria-hidden">
+  <form action="javascript:void(0);" method="POST" id="saveEdit">
+    <input type="text" id="edit-name">
+    <input type="submit" value="Edit" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+  </form>
+</div>
+
+<p id="counter"></p>
+
+<table class="member-panel1">
+  <tr>
+    <th>Name</th>
+  </tr>
+    <tbody id="members">
+    </tbody>
+</table>
+</div>
+
+<div id="dashboard" class="container-fluid calendar-panel form">
+  <div class="panel-heading">
+    <h3 class="panel-title">Select date</h3>
+  </div>
+  <div class="booking-calendar">
+    <table>
+      <caption>
+        <span class="month-1">July 2018</span>
+      </caption>
+      <thead>
+        <tr>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 </br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Cancelled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+
+              <td>2</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Cancelled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>3</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>4</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>5</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+            </tr>
+            <tr>
+              <td>8 </br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+
+              <td>9</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>10</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>11</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>12</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+            </tr>
+            <tr>
+              <td>15 </br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+
+              <td>16</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>17</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>18</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>19</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+            </tr>
+            <tr>
+              <td>22</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+
+              <td>23</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>24</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>25</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>26</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+            </tr>
+            <tr>
+              <td>29</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+
+              <td>30</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+              <td>31</br><input type="checkbox" id="myCheck"  onclick="myFunction()">Booked</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Canceled</br>
+                <input type="checkbox" id="myCheck"  onclick="myFunction()">Waitlisted
+              </td>
+
+            </tr>
+          </tbody>
+    </table>
+    <p id="text" style="display:none">Checkbox is CHECKED!</p>
+  </div>
+
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="./resources/js/main.js"></script>
+    </body>
+
+  </html>

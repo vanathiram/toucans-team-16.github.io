@@ -1,0 +1,293 @@
+body{
+  position: relative;
+  font-size: 16px;
+}
+
+.section{
+  margin-top:6rem;
+}
+
+.homepage img{
+  width:70rem;
+  height:20rem;
+
+}
+.aboutus img{
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about-title{
+  margin-bottom: 2rem;
+}
+
+form {
+  /*margin: 0 auto;*/
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+.contact2 label {
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+}
+
+ .contact2 input, textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+
+  border-color: #000;
+}
+
+textarea {
+
+  vertical-align: top;
+  height: 5em;
+}
+
+.button{
+  padding-left: 90px;
+}
+
+button {
+  margin-left: .5em;
+}
+
+.contact1{
+
+  text-align: left;
+}
+
+ footer{
+   height:auto;
+   background-color: #b9c2d278;
+ }
+ /*SCROLL BUTTON*/
+ #scrollBtn {
+	    display: block; /* Hidden by default */
+	    position: fixed; /* Fixed/sticky position */
+	    bottom: 20px; /* Place the button at the bottom of the page */
+	    right: 30px; /* Place the button 30px from the right */
+	    z-index: 99; /* Make sure it does not overlap */
+	    border: none; /* Remove borders */
+	    outline: none; /* Remove outline */
+	    /*background-color: ; /* Set a background color */
+	    color: white; /* Text color */
+	    cursor: pointer; /* Add a mouse pointer on hover */
+	    padding: 15px; /* Some padding */
+	    border-radius: 50%; /* Rounded corners */
+	}
+  #scrollBtn.btn-primary{
+    background-color:#2d354478;
+  }
+
+	#scrollBtn:hover {
+	    background-color: #555; /* Add a dark-grey background on hover */
+	}
+
+/*memberlogin form*/
+.memberlogin{
+  width:60%;
+  margin:auto;
+}
+
+#loginform{
+  background-color: #b9c2d278;
+}
+
+/* end of memberlogin form*/
+
+/*calendar panel*/
+.calendar-panel{
+  width:80%;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #999;
+  background-color: #b9c2d278;
+  border-radius: 2%;
+}
+
+caption{
+  caption-side: top;
+  text-align: center;
+}
+
+ table{
+   width:100%;
+   border: 1px solid #999;
+ }
+
+td{
+  border: 1px solid #999;
+  text-align: left;
+}
+/* end of calendar panel*/
+
+/*adminlogin*/
+.admin
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  width:100%;
+}
+
+.admin .container2{
+  display: flex;
+  flex-direction: column;
+  width:60%;
+  height:auto;
+  border: 2px solid black;
+  margin:2rem;
+
+}
+
+.admin .channels{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin-bottom:4px;
+  background-color: #607d8ba1;
+}
+
+#first{
+  text-align: center;;
+  height: auto;
+}
+
+.admin img{
+  margin: 0 5rem 0 5rem;
+}
+
+.admin #main{
+  align-items: flex-start;
+  width:100%;
+
+}
+
+.admin p{
+  font-size: 1rem;
+}
+
+.admin img{
+  width:3rem;
+  height:3rem;
+}
+
+.admin a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 4rem;
+}
+
+ .admin span{
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.a{
+  width:60%;
+  text-align: left;
+}
+
+.b{
+  width:30%;
+  text-align: left;
+}
+
+.modal,.modal.fade.in {
+  opacity: 2;
+}
+
+.modal.in .modal-dialog {
+  transform: translate(0, 0);
+}
+
+.modal-backdrop.in {
+  opacity: 0.5;
+  /* opacity: $modal-backdrop-opacity; (SCSS) */
+}
+
+/*adminlogin*/
+/*member-panel */
+.member-panel{
+  display:none;
+  width:60%;
+  margin:auto;
+}
+
+.admin-page{
+  width:40%;
+  margin:auto;
+  padding: 2rem;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  margin-top:3rem ;
+  margin-bottom:2rem;
+  background-color:#cbcfd4;
+}
+
+#counter{
+  padding:1rem;
+
+}
+/*member-panel ends*/
+/* Enrollment form -Start */
+ul{
+  list-style-type: none;
+}
+.enrollment_form ul
+{
+  list-style-position:outside;
+    margin:0px;
+    padding:10px;
+    width: 100%;
+
+
+}
+.enrollment_form li{
+  padding :  5px 3px;
+  background-color: #e0e0d1;
+  border-bottom: solid 1px #f5f5f0;
+  margin:2px;
+
+
+}
+.enrollment_form input
+{
+  width: 40%;
+}
+.enrollment_form label
+{
+  float: left;
+  display: inline-block;
+  width: 200px;
+  margin:0px;
+}
+ input[type="radio"]{
+  margin-left:10px;
+  padding-left: 10px;
+  width: 10%;
+
+}
+ label[for="male"],label[for="female"]
+{
+  float:none;
+  margin:0px ;
+  padding: 0px;
+  width:50px;
+}
+/* Enrollment form -End */
